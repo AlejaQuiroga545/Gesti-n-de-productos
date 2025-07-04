@@ -1,0 +1,25 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Adobe Creative Cloud",
+      "categoria": "Software de diseño",
+      "precio": 4500000,
+      "descripcion": "Suite de herramientas para diseño gráfico, edición de video y fotografía."
+    },
+    {
+      "id": 2,
+      "nombre": "Figma Pro",
+      "categoria": "Herramienta de diseño UI/UX",
+      "precio": 1200000,
+      "descripcion": "Herramienta colaborativa para diseño de interfaces y prototipos interactivos."
+    },
+    {
+      "id": 3,
+      "nombre": "Freepik Premium",
+      "categoria": "Recursos gráficos",
+      "precio": 800000,
+      "descripcion": "Acceso a millones de recursos gráficos, fotos y vectores de alta calidad."
+    }
+  ]
+}

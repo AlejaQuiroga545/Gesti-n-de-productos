@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestión de Productos Creativos</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="container">
+      <h1>🎨 Gestión de productos para diseño gráfico</h1>
+    </div>
+  </header>
+
+  <section class="intro">
+    <div class="intro-content">
+      <h2>¡Hola!</h2>
+      <p>
+        Bienvenid@ a tu espacio para organizar tus herramientas de diseño gráfico ✨<br>
+        Aquí puedes agregar tus gadgets favoritos como PCs, tabletas, cámaras y más. <br><br>
+        Edita, elimina o agrega lo que necesites… <b>¡todo en un solo lugar!</b>
+      </p>
+    </div>
+  </section>
+
+  <main class="main-content">
+    <section class="form-section">
+      <h2>Agregar un nuevo producto</h2>
+      <form id="formulario">
+        <input type="text" id="nombre" placeholder="Nombre del producto" required />
+        <input type="text" id="categoria" placeholder="Categoría" required />
+        <input type="number" id="precio" placeholder="Precio" required />
+        <textarea id="descripcion" placeholder="Descripción" required></textarea>
+        <button type="submit">Agregar producto</button>
+      </form>
+    </section>
+
+    <section id="productos" class="productos-section">
+      <!-- Tarjetas generadas dinámicamente -->
+    </section>
+  </main>
+
+  <script src="gestion_api.js"></script>
+</body>
+</html>

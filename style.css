@@ -1,0 +1,247 @@
+/* GLOBAL */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #fef6fb 70%, #e3e6f7 100%);
+  color: #333;
+  padding-bottom: 3rem;
+}
+
+/* HERO encabezado */
+.hero {
+  text-align: center;
+  background: linear-gradient(120deg, #fce4ec 0%, #f3e5f5 100%);
+  padding: 3rem 1.5rem;
+  box-shadow: 0 8px 16px rgba(240, 98, 146, 0.1);
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  color: #c842d4;
+  animation: scaleUp 1s ease-in-out;
+}
+
+/* SECCIÓN INTRO */
+.intro {
+  background-color: #fff0f6;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in;
+}
+
+.intro-content {
+  max-width: 750px;
+  margin: 0 auto;
+  border-radius: 12px;
+  padding: 2rem;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(240, 98, 146, 0.12);
+  transition: transform 0.3s ease;
+}
+
+.intro-content:hover {
+  transform: scale(1.02);
+}
+
+.intro h2 {
+  color: #c842d4;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  font-size: 1rem;
+  color: #2b2b2b;
+  line-height: 1.7;
+}
+
+/* FORMULARIO */
+.form-section {
+  max-width: 600px;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.form-section h2 {
+  color: #c842d4;
+  margin-bottom: 1.5rem;
+}
+
+form {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(92,107,192,0.10), 0 1.5px 6px rgba(63,81,181,0.08);
+  padding: 2rem 3.5rem 1.5rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  position: relative;
+}
+
+form::before {
+  content: '';
+  position: absolute;
+  top: -12px; left: 50%;
+  transform: translateX(-50%);
+  width: 60px; height: 6px;
+  background: linear-gradient(90deg, #f48fb1 0%, #ce93d8 100%);
+  border-radius: 6px;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  border: none;
+  border-bottom: 2.5px solid #ce93d8;
+  font-size: 1.08rem;
+  background: transparent;
+  transition: border-color 0.3s, background 0.2s;
+  outline: none;
+}
+
+form input:focus,
+form textarea:focus {
+  border-bottom: 2.5px solid #f48fb1;
+  background: #fdf4fa;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #b0b0b0;
+  opacity: 1;
+  font-size: 1rem;
+}
+
+form button {
+  background: linear-gradient(90deg, #f48fb1 0%, #ce93d8 100%);
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px rgba(240, 98, 146, 0.15);
+  transition: background 0.2s, transform 0.1s;
+}
+
+form button:hover {
+  background: linear-gradient(90deg, #ce93d8 0%, #f48fb1 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+/* PRODUCTOS */
+.productos-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: linear-gradient(120deg, #fff 80%, #f7f8fc 100%);
+  border-radius: 18px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 18px rgba(240, 98, 146, 0.10);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 32px rgba(240, 98, 146, 0.18);
+  transform: translateY(-4px) scale(1.02);
+}
+
+.card h3 {
+  color: #ab47bc;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  margin: 0.25rem 0;
+  color: #444;
+}
+
+.card .acciones {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.card button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 1px 4px rgba(240, 98, 146, 0.08);
+  transition: background 0.2s, transform 0.1s;
+}
+
+.card .editar {
+  background: #ce93d8;
+  color: #ffffff;
+}
+
+.card .editar:hover {
+  background: #c560ff;
+  transform: scale(1.05);
+}
+
+.card .eliminar {
+  background: #f48fb1;
+  color: white;
+}
+
+.card .eliminar:hover {
+  background: #e53935;
+  transform: scale(1.05);
+}
+
+/* ANIMACIONES */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  form {
+    padding: 1.2rem 1.2rem;
+  }
+
+  .productos-section {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+}
