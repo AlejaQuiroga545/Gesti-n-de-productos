@@ -1,20 +1,36 @@
-# 🎨 Gestión de productos para diseño gráfico
+# 🎨 Gestor de Productos Creativos
 
-¡Hola! Este es un proyecto web enfocado en el uso de **JavaScript** moderno y **json-server** para crear un pequeño sistema de gestión de productos creativos, ideal para diseñadoras, ilustradoras y amantes del orden visual ✨.
+¡Hola! 👋 Este es un proyecto web enfocado en el uso de **JavaScript moderno** junto con **json-server**, donde desarrollé una app interactiva y con mucho estilo girly 🩷 para gestionar productos relacionados con el mundo del diseño gráfico 🎨.
 
-## 🌟 ¿Qué hace este proyecto?
+---
 
-Permite **crear, leer, actualizar y eliminar (CRUD)** productos relacionados al área de diseño, fotografía, videos, etc. Cada producto tiene un nombre, categoría, precio y descripción, todo gestionado desde una interfaz amigable, responsiva y con un estilo girly 🩷.
+## 💡 ¿Qué es esto?
 
-## 🛠️ Tecnologías usadas
+Una interfaz visual donde puedes:
 
-- **HTML + CSS**| Estructura y diseño visual.
-- **JavaScript**| Lógica principal y conexión con la API.
-- **[JSON-SERVER](https://www.npmjs.com/package/json-server)**| Servidor simulado local para manejar una "base de datos" con JSON.
+- 🧾 Agregar productos de diseño gráfico (como PCs, tabletas Wacom, cámaras, etc.)
+- ✏️ Editarlos con facilidad
+- 🗑️ Eliminarlos si ya no los necesitas
+- 👀 Verlos en una grilla hermosa y ordenada
 
-## 🚀 ¿Cómo lo ejecuto?
+Todo esto está conectado a una **API REST simulada** con `json-server`. ¡Sí! Aunque los datos están "quemados" al inicio, el usuario puede editarlos y agregar sus propios productos como si fuera una app real.
 
-1. Clona este repositorio:
-   ```bash
-   git clone https://github.com/tu-usuario/nombre-del-repo.git
-   cd nombre-del-repo
+---
+
+## ⚙️ Tecnologías utilizadas
+
+| Lenguaje | Uso |
+|---------|------|
+| 🧱 HTML | Estructura de la app |
+| 🎨 CSS  | Estilo girly, responsive y animado |
+| 💻 JavaScript | Lógica, interactividad y conexión con la API |
+| 🗂️ json-server | Base de datos simulada con JSON |
+
+---
+
+## 🚀 Cómo ejecutar el proyecto
+
+### 1️⃣ Clona el repositorio
+```bash
+git clone https://github.com/tu-usuario/gestor-productos-creativos.git
+cd gestor-productos-creativos
